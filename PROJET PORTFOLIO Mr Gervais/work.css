@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    padding-top: 2rem;
+    font-size: 0.75rem;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    padding-right: 2.1rem;
+}
+
+nav {
+    margin-right: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 2.1rem;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    font-size: 0.75rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+h1 {
+    font-size: 3.9rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    transform: scaleY(1.4);
+}
+
+p {
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    line-height: 1.5;
+}
+
+.work-page { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.project {
+    position: relative;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius:15px;
+
+}
+
+.project-details {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 10px;
+    text-align: left; 
+}
+
+.project-details h3 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.project-details p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    padding: 3rem 5vw;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.footer-left {
+    flex: 1 1 30%; 
+    text-align: left;
+}
+
+.footer-image {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.footer-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.footer-right {
+    flex: 1 1 30%; 
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.footer-services, .footer-clients {
+    flex: 1;
+}
+
+.footer-services p:first-child, .footer-clients p:first-child {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* boule blanche */
+#custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+}
+
+#cursor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
